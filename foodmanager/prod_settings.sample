@@ -1,0 +1,31 @@
+'''
+Created on 26.12.2017
+
+@author: Christoph Krammer <chris@twotigers.de>
+
+This file contains the productive settings of the  instance. 
+Settings from the standard settings.py module may be overwritten here.
+
+On a productive system, copy this file to prod_settings.py and change to your needs, 
+especially a new SECRET_KEY
+
+See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+'''
+
+from .settings import *
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = ''
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+# Database
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db_prod.sqlite3'),
+    }
+}

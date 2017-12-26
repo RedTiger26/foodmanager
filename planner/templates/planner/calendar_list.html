@@ -1,0 +1,11 @@
+<h1>Kalender-Übersicht</h1>
+
+{% if calendars %}
+    <ul>
+    {% for c in calendars %}
+        <li><a href="/planner/{{ c.id }}/">{{ c.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Keine Kalender angelegt.</p>
+{% endif %}
