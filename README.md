@@ -6,8 +6,8 @@ There is no fixed roadmap, no release cycle and absolutely no idea, where this w
 
 ## Getting started
 To get involved with development, clone the repository to your local IDE and perform the following tasks:
-- Create a database with the correct structure by running manage.py migrate
-- Add a super-admin user to the database to start playing around by running manage.py createsuperuser
+- Create a database with the correct structure by running `manage.py migrate`
+- Add a super-admin user to the database to start playing around by running `manage.py createsuperuser`
 
 ## Contact
 The foodmanager project was started and is currently run by Christoph Krammer <chris@twotigers.de>.
