@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>MyPlate Calculator</title>
+    <script type="text/javascript">
+  	 function enter()
+        {
+            //Obtain user inputs
+			var vegitables = Number(document.getElementById("vegetables").value);
+            //var fruit = Number(document.getElementById("fruit").value);
+            //var grains = Number(document.getElementById("grains").value);
+            //var protien = Number(document.getElementById("protiens").value);
+            //var dairy = Number(document.getElementById("protiens").value);
+
+
+            //Calculate MyPlate
+            var vegplate = vegitables / 5;
+			
+            document.getElementById("outputveg").innerText = (vegplate * 100)
+            document.getElementById("outputfru").innerText = (vegplate * 100)
+
+}
+    </script>
+</head>
+
+<body>
+    <h1>MyPlate Calculator</h1>
+    <p>How many cups of vegetables does your meal contain? <input type="text" id="vegetables"/>
+    </p>
+    <p>How many cups of fruit does your meal contain? <input type="text" id="fruit"/>
+    </p>
+    <p>How many ounces of grains does your meal contain? <input type="text" id="grains"/>
+    </p>
+    <p>How many ounces of protien does your meal contain? <input type="text" id="protien"/>
+    </p>
+    <p>How many cups of dairy does your meal contain? <input type="text" id="dairy"/>
+    </p>
+ <input type="submit" value="enter" onclick="enter();">
+
+    <h1>Your Meal Contains: </h1>
+
+ 	<h2><span id="outputveg">?</span></h2> 
+     <h2><span id="outputfru">?</span></h2> 
+</body>
